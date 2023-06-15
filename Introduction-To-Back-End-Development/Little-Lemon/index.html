@@ -6,31 +6,61 @@
 </head>
 <body>
     <div class="container">
-        <div class="col-12 col-lg-6">
+        <div class="row">
             <div class="col">
                 <h1>Our Menu</h1>
-                <h2>Chicken Burger</h2>
-                <p>Chicken, lettuce, mayo</p>
-                <img class="img-fluid" src="burger.jpeg" alt="Burger">
+                <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="card">
+                                <img class="card-img-top" src="calamari.jpeg" alt="Calamari">
+                                <div class="card-body">
+                                    <h2 class="card-title">Fried Calamari <span class="badge bg-primary">New</span></h2>
+                                    <p class="card-text">Squid, Buttermilk.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card">
+                                <img class="card-img-top" src="falafel.jpeg" alt="Falafel">
+                                <div class="card-body">
+                                    <h2 class="card-title">Falafel</h2>
+                                    <p class="card-text">Chickpea, herbs, and spices.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card">
+                                <img class="card-img-top" src="salad.jpeg" alt="Salad">
+                                <div class="card-body">
+                                    <h2 class="card-title">Pasta Salad</h2>
+                                    <p class="card-text">Lettuce, vegetables, and mozzarella.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>      
             </div>
-            <h2>Breakfast Burger</h2>
-            <p>Beef, Egg, Bacon, Tomato, Mayo</p>
-            <img class="img-fluid" src="breakfast_burger.jpeg" alt="Breakfast Burger">
+            <div class="col">
+                <h2>Prices</h2>
+                <table class="table">
+                    <tr>
+                        <td>Fried Calamari</td>
+                        <td>$17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Falafel</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pasta Salad</td>
+                        <td>$12.00</td>
+                    </tr>
+                </table>
+                <div class="alert alert-info" role="alert">
+                    Try our new Fried Calamari
+                </div>
+            </div>
         </div>
-        <div class="col-12 col-lg-6">
-            <h2>Prices</h2>
-            <table class="table">
-                <tr>
-                    <td>Chicken Burger</td>
-                    <td>$12.00</td>
 
-                </tr>
-                <tr>
-                    <td>Breakfast Burger</td>
-                    <td>$15.00</td>
-                </tr>
-            </table>
-        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
