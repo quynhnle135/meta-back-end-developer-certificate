@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from myapp.forms import LogForm
+from .models import Menu
 
 def home(request):
     return HttpResponse('Welcome to Little Lemon!')
@@ -11,8 +12,25 @@ def about(request):
     return render(request, "about.html", about_content)
 
 def menu(request):
-    menu_content = {'menu': 'Little Lemon menu'}
-    return render(request, "menu.html", menu_content)
+    # menu_content = {'menu': 'Little Lemon menu'}
+    # return render(request, "menu.html", menu_content)
+
+    # menuitem = {'name': 'Greek Salad'}
+    # return render(request, "menu.html", menuitem)
+    new_menu = {
+        'mains': [
+            {'name': 'falafel', 'price': '12'}, 
+            {'name': 'shawarma', 'price': '15'},
+            {'name': 'gyro', 'price': '10'}
+        ]        
+    }
+
+    return render(request, 'menu.html', new_menu)
+
+def menu_by_id(request):
+    new_menu = Menu.objects.all()
+    new_menu_dict = {'menu': new_menu}
+    return render(request, "menu_cards.html", new_menu_dict)
 
 def book(request):
     return HttpResponse('Make a booking')
