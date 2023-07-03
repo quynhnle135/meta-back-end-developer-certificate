@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Hello</p>
-    <form action="" method="post">
-        {% csrf_token %}
-        {{form.as_p}}
+{% extends "base.html" %}
 
-        <input type="submit" value="Submit">
-    </form>
-</body>
-</html>
+{% block content %}
+
+<h2>Welcome to Little Lemon Homepage</h2>
+<p>This is a home page for Little Lemon</p>
+
+{% endblock %}
