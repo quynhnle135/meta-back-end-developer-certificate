@@ -1,3 +1,4 @@
+# Python's format function
 print("My favorite fruits are {0} and {1}".format("Lychee", "Banana"))
 
 first_fav_fruit = "Lychee"

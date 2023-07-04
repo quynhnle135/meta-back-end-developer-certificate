@@ -2,6 +2,7 @@ def divide_by(a, b):
     return a / b
 
 
+# zero division error
 try:
     ans = divide_by(40, 0)
 except ZeroDivisionError as e:
