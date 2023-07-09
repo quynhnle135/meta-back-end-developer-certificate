@@ -29,5 +29,12 @@ sample_dict = {1: 'c', 2: 'T', 3: 'J'}
 for x in sample_dict:
     print(x)
 
-for x in range(1, 4):
-    print(int(str(float(x))))
+# for x in range(1, 4):
+#     print(int(str(float(x))))
+
+with open('sampletext.txt', 'r') as file:
+    content = file.read()
+print(content)
+
+first_line = content.partition('\n')[0]
+print(f"This is my first line: {first_line}")
