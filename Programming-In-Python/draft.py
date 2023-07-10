@@ -38,3 +38,6 @@ print(content)
 
 first_line = content.partition('\n')[0]
 print(f"This is my first line: {first_line}")
+
+my_str = "Hello"
+print(my_str[0].isupper())
