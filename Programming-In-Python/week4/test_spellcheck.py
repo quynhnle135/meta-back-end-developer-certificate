@@ -34,8 +34,8 @@ def test_length(input_value):
     """
     # WRITE SOLUTION CODE HERE
     try:
-        assert spellcheck.word_count(input_value) < 10
-        assert spellcheck.char_count(input_value) < 50
+        assert (spellcheck.word_count(input_value) < 10) and (
+            spellcheck.char_count(input_value) < 50)
     except:
         raise NotImplementedError()
 
@@ -55,8 +55,8 @@ def test_struc(input_value):
     """
     # WRITE SOLUTION CODE HERE
     try:
-        assert spellcheck.first_char(input_value).isupper() == True
-        assert spellcheck.last_char(input_value) == "."
+        assert (spellcheck.first_char(input_value).isupper() == True) and (
+            spellcheck.last_char(input_value) == ".")
     except:
         raise NotImplementedError()
 
